@@ -10,9 +10,33 @@ class BannerElement extends HTMLElement {
                 text-align: left;
                 background-color: white;
                 border-radius: 4px;
-                border: 2px solid darkorange;
+                border: 2px solid;
                 word-break: break-word;
                 padding: 16px;
+            }
+            
+            :host(.my-component-warning) svg {
+                fill: darkorange;
+            }
+            
+            :host(.my-component-warning) {
+                border-color: darkorange;
+            }
+            
+            :host(.my-component-error) svg {
+                fill: red;
+            }
+            
+            :host(.my-component-error) {
+                border-color: red;
+            }
+            
+            :host(.my-component-info) svg {
+                fill: dodgerblue;
+            }
+            
+            :host(.my-component-info) {
+                border-color: dodgerblue;
             }
             
             svg {
@@ -21,7 +45,6 @@ class BannerElement extends HTMLElement {
                 flex-shrink: 0;
                 flex-grow: 0;
                 font-size: 18px;
-                fill: white;
                 font-weight: bold;
             }
             
@@ -32,8 +55,8 @@ class BannerElement extends HTMLElement {
         </style>
         
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="darkorange"/>
-            <text x="50%" y="51%" dominant-baseline="middle" text-anchor="middle">!</text>
+            <circle cx="12" cy="12" r="10"/>
+            <text x="50%" y="51%" dominant-baseline="middle" text-anchor="middle" fill="white">!</text>
         </svg>
         
         <span class="banner-message">
