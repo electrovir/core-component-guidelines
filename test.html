@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Core Component Guidelines</title>
+        <script type="module" src="./banner-good.element.js"></script>
+        <style>
+            body {
+                background-color: black;
+                font-family: sans-serif;
+                width: 100vw;
+                height: 100vh;
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            my-banner {
+                /* Notice this line has an unexpected effect */
+                margin: 32px;
+                /* Notice the following lines have no effect */
+                border-color: red;
+                width: 200px;
+                padding: 32px;
+                /* Try uncommenting the following line to see craziness */
+                /* border: 5px solid pink; */
+            }
+        </style>
+    </head>
+    <body>
+        <my-banner>Hello there</my-banner>
+    </body>
+</html>
