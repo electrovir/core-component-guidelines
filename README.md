@@ -8,7 +8,7 @@ Other non-core, one-off, or single-use components don't necessarily need to be a
 
 # Terminology
 
--   **Component**: isolated, composable building blocks in native JS, Angular, React, and other frameworks.
+-   **Component**: scoped, composable building blocks in native JS, Angular, React, and other frameworks.
 -   **Consumer**: whatever uses the component, most likely a "parent" component; any place where the core component is instantiated in HTML.
 -   **Component selector**: the tag name used in HTML, like `<div>` or `<my-component>` (but not including the angle brackets). This is defined when you register your component (the exact process and syntax for which varies by framework).
 -   **Host**: the root scope in the component's HTML template; the component itself. Styled in CSS with `:host`.
