@@ -1,4 +1,4 @@
-# Core Component (Style) Guidelines
+# Versatile Core Component (Style) Guidelines
 
 This revolves around style or CSS guidelines.
 
