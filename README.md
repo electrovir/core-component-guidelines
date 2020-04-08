@@ -17,7 +17,6 @@ Other non-core, one-off, or single-use components don't necessarily need to be a
 
 -   The component should be responsive and open to different consumer styling.
 -   The component should properly separate responsibilities between CSS, HTML, and JS.
--   The component shouldn't need to be modified to fit every use case.
 
 # How to Accomplish the Key Principles
 
